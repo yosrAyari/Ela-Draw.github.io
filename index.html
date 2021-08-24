@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<section>
+		<article id="article1">
+			<div id="logo">
+				<img src="2.png">
+			</div>
+		</article>
+		<article id="article2">
+			<div id="input1">
+				<input type="text" name="" placeholder="Enter Your Name">
+				<i class="fa fa-user" aria-hidden="true"></i>
+			</div>
+			<div id="input2">
+				<input type="password" name="" placeholder="Enter Your Password" id="password">
+				<i class="fa fa-lock" aria-hidden="true" id="i"></i>
+			</div>
+		</article>
+		<article id="article3">
+			<button>Submit</button>
+			<div id="sign-forget">
+				<a href="">Resgister Now!</a>
+				<a href="">Forget Password?</a>
+			</div>
+		</article>
+	</section>
+	<script type="text/javascript">
+		var password = document.getElementById('password')
+		var btn = document.getElementById('i');
+		btn.addEventListener('click',toggle);
+
+		function toggle() {
+			if (btn.classList.contains('fa-lock') ){
+				btn.classList.remove('fa-lock');
+				btn.classList.add('fa-unlock-alt');
+				password.setAttribute('type','text')
+			}
+			else{
+				btn.classList.remove('fa-unlock-alt');
+				btn.classList.add('fa-lock');
+				password.setAttribute('type','password');
+			}
+		};
+
+	</script>
+</body>
+</html>
