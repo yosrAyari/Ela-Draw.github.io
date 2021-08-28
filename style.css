@@ -7,7 +7,7 @@ section{
 	height: 110%;
 	background-color: #cdfffc;
 	z-index: -3;
-	box-shadow: 0 0 50px #dae3e0;
+	box-shadow: 0 0 20px #dae3e0;
 }
 #article1{
 	border: 3px solid #969696;
@@ -16,9 +16,10 @@ section{
 	border-top-left-radius:500px ;
 	border-top-right-radius: 500px;
 	width: 99%;
-	height: 90%;
+	height: 120%;
 	background-color: white;
 	z-index: -2;
+	box-shadow: 0 0 50px #dae3e0;
 }
 #article2{
 	z-index: 1;
@@ -88,4 +89,10 @@ h2{
 	width: 58px;
 	height: 58px;
 	border-radius: 50px;
+}
+@media screen and (max-width: 680px) {
+	section{
+		width: 100%;
+		left: 0;
+	}
 }
